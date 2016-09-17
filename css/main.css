@@ -1,0 +1,940 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+ Base styles: opinionated defaults
+ ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+ Browser Upgrade Prompt
+ ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+body{
+	overflow-x:hidden;
+	background-color:#0066CC;
+}
+
+
+/* ==========================================================================
+ Intro
+ ========================================================================== */
+section {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	z-index: -1;
+}
+
+.biggerSection{
+	height: 110vh;
+}
+
+p {
+	margin: 0;
+	padding: 0
+}
+
+.intro {
+	background: transparent;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.intro-bg{
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/clouds.png);
+    background-repeat: repeat;
+   
+}
+
+#parallax1{
+	height: 100vh;
+	width: 100vw;
+}
+
+.intro-bg img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#intro-hello {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#intro-description {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#intro-hello-text {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	color: white;
+	text-decoration: none;
+	font: 200px Arial, Helvetica, sans-serif;
+	font-size: 10vw;
+	text-align: center;
+	transform: translateY(-50%) translateX(-50%);
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE/Edge */
+	text-shadow: 1px 2px 0 black;
+}
+
+#intro-hello-text:hover {
+	cursor: default;
+}
+
+#intro-description-portret {
+	position: relative;
+	float: left;
+	width: 40%;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+
+#intro-description-portret img {
+	width: 100%;
+	height: 100%;
+}
+
+#intro-description-table {
+	position: relative;
+	float: left;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60%;
+	height: 50%;
+}
+
+#intro-description-table table {
+	width: 100%;
+	height: 100%;
+}
+
+#intro-description-table td {
+	vertical-align: top;
+}
+
+#intro-description-table p {
+	font: 25px Arial, Helvetica, sans-serif;
+	font-size: 1.2vw;
+	padding-left: 5%;
+	color: white;
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE/Edge */
+	text-shadow: 1px 2px 0 black;
+}
+
+.intro-table-left {
+	width: 30%;
+	padding-top: 0.6vw;
+}
+
+
+.line-1 {
+	stroke-dasharray: 280;
+	stroke-dashoffset: -280;	
+}
+
+.scale-line-1 {
+	width: 100%;
+	display: block;
+	height: auto;
+	position: relative;
+	padding-top: 40%;
+} 
+
+svg {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#intro-scroll{
+	position: relative;
+	width: 4vw;
+	width: 100%;
+	height: 100%;
+}
+
+#intro-scroll img{
+	  width: 0%;
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  
+	  transform: translateY(-110%) translateX(-50%);
+}
+/* ==========================================================================
+ Menu-1
+ ========================================================================== */
+#menu-1{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.overItem{
+	z-index: 0;
+}
+
+#menu-button-group{
+	position:relative;
+	float:left;
+	width:5%;
+	height:33%;
+	top:130%;
+	z-index: 8888;
+	transform:translateY(-50%) translateX(-100%);
+}
+
+#menu-button-group li{
+  display: inline-block;
+  list-style: none;
+  zoom: 1;
+  width:100%;
+  height:25%;
+  border-bottom: 0.2vw solid #296A7C;
+}
+
+#menu-button-group li .menu-btn{
+   width:91%;
+   height:100%;
+}
+
+#menu-button-group li:last-child{
+   border-bottom: 0;
+}
+
+#menu-button-group >.menu-btn:first-child,
+#menu-button-group li:first-child .menu-btn {   
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+}
+
+#menu-button-group >.menu-btn:last-child,
+#menu-button-group li:last-child>.menu-btn {
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+#canvas{
+	width:100vw;
+}
+
+#terrain{
+	position:absolute;
+	width:100%;
+	z-index:-1;
+	height: 0;
+    padding-bottom: 100%;
+}
+
+
+.ground{
+	width:100%;
+	-webkit-transform: translateZ(0); -moz-transform: translateZ(0); transform: translateZ(0);
+
+}
+
+.ground *{
+	width:100%;
+	
+}
+
+#ocean-1{
+}
+
+#ground-1{
+	top:63.8%;
+	position:absolute;
+}
+
+
+#ground-2{
+	position:absolute;
+	top:83.7%;
+}
+
+#ground-3{
+	position:absolute;
+	top:117.7%;
+}
+
+#ground-4{
+	position:absolute;
+	top:147.5%;
+}
+
+#ground-5{
+	position:absolute;
+	top:181.7%;
+}
+
+#ground-6{
+	position:absolute;
+	top:237.3%;
+}
+
+#ground-7{
+	position:absolute;
+	top:283%;
+}
+
+
+.sendButton
+{
+	position:absolute;
+	left:32%;
+	width:30%;
+	
+	background-color:#7BA5D7;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #3878BD;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1.5vw;
+	text-align: center;
+	padding:1% 2%;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+.sendButton:hover {
+	background-color:#6A93C0;
+}
+
+#sendButton-1{
+	top:30%;
+}
+
+#sendButton-2{
+	top:40%;
+}
+
+#sendButton-3{
+	top:50%;
+}
+
+#platform-1
+{
+	position:absolute;
+	top:75.2%;
+	width:44.4%;
+	left:40%;
+}
+
+#platform-2
+{
+	position:absolute;
+	top:115.15%;
+	width:31.2%;
+	left:62.2%;
+}
+
+#platform-2-b
+{
+	position:absolute;
+	top:116.2%;
+	width:31.2%;
+	left:5.6%;
+}
+
+#platform-3
+{
+	position:absolute;
+	top:149.19%;
+	width:31.6%;
+    left:5.5%;
+}
+
+#platform-4
+{
+	position:absolute;
+	top:185.9%;
+	width:31.7%;
+    left:55.7%;
+}
+
+#platform-5
+{
+	position:absolute;
+	top:234.3%;
+	width:31.6%;
+    left:5.5%;
+}
+
+#menu-trigger
+{
+	position:absolute;
+	top:100%;
+}
+
+#platform-trigger-1a
+{
+	position:absolute;
+	top:35%;
+}
+
+#platform-trigger-1b
+{
+	position:absolute;
+	top:55%;
+}
+
+#platform-trigger-2a
+{
+	position:absolute;
+	top:75%;
+}
+
+#platform-trigger-2b
+{
+	position:absolute;
+	top:95%;
+}
+
+#platform-trigger-3a
+{
+	position:absolute;
+	top:110%;
+}
+
+#platform-trigger-3b
+{
+	position:absolute;
+	top:130%;
+}
+
+#platform-trigger-4a
+{
+	position:absolute;
+	top:150%;
+}
+
+#platform-trigger-4b
+{
+	position:absolute;
+	top:170%;
+}
+
+#platform-trigger-5a
+{
+	position:absolute;
+	top:190%;
+}
+
+#platform-trigger-5b
+{
+	position:absolute;
+	top:210%;
+}
+
+/* ==========================================================================
+ Rating Tower
+ ========================================================================== */
+ #towers{
+	position:absolute;
+	width:100%;
+	z-index:-1;
+	height: 0;
+    padding-bottom: 100%;
+ }
+
+ 
+.tower{
+	width:5.2%;
+	z-index:-1;
+	
+}
+
+.tower *{
+	width:100%;
+	z-index:-1;
+	
+}
+ 
+ #rating-tower-1
+ {
+	position:absolute;
+	top:185.98%;
+	left:15.4%;
+ }
+ 
+  #rating-tower-2
+ {
+	position:absolute;
+	top:177%;
+	left:27.8%;
+ }
+ 
+  #rating-tower-3
+ {
+	position:absolute;
+	top:193.8%;
+	left:25.2%;
+ } 
+ 
+ #rating-tower-4
+ {
+	position:absolute;
+	top:183%;
+	left:40.4%;
+ }
+ 
+  #rating-tower-5
+ {
+	position:absolute;
+	top:195%;
+	left:47%;
+ }
+ 
+  #rating-tower-6
+ {
+	position:absolute;
+	top:189%;
+	left:59.7%;
+ }
+ 
+ .rating-tower-img
+ {
+	-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 88%, 48% 100%, 0 88%);
+	clip-path: polygon(0 100%, 100% 100%, 100% 88%, 48% 100%, 0 88%);
+ }
+ 
+ #tower-trigger-1
+ {
+	position:absolute;
+	top:155%; 
+ }
+ 
+.tower-text{
+	width:100%;
+	height:50%;
+	position:absolute;
+	top:-20%;
+	
+	-webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.tower-text p{
+	position:absolute;
+	font-size:2.25vw;
+	line-height: 100%;
+	text-align:center;
+	width:305%;
+	color:white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+   
+	-webkit-transform: translateX(-33%); /* Safari */
+    transform: translateX(-33%);
+}
+
+
+.boat{
+	z-index:-1;
+}
+
+.boat *{
+	width:100%;
+}
+ 
+#rating-boat-1
+{
+	position:absolute;
+	width:15.5%;
+	top:221%;
+	left:56%;
+}
+
+#rating-boat-small-1
+{
+	position:absolute;
+	width:6.5%;
+	top:224.5%;
+	left:75%;
+}
+
+#rating-boat-small-2
+{
+	position:absolute;
+	width:6.5%;
+	top:221.5%;
+	left:95%;
+}
+
+#rating-boat-small-3
+{
+	position:absolute;
+	width:6.5%;
+	top:222%;
+	left:100%;
+}
+
+
+ #boat-trigger-1
+ {
+	position:absolute;
+	top:224%; 
+ }
+ 
+#rating-boat-small-4
+{
+	position:absolute;
+	width:6.5%;
+	top:248.5%;
+	left:10%;
+}
+
+#rating-boat-small-5
+{
+	position:absolute;
+	width:6.5%;
+	top:252%;
+	left:4%;
+}
+
+#rating-boat-small-6
+{
+	position:absolute;
+	width:6.5%;
+	top:256%;
+	left:-5%;
+}
+
+ #boat-trigger-2
+ {
+	position:absolute;
+	top:265%; 
+ }
+ 
+ #rating-boat-small-7
+{
+	position:absolute;
+	width:6.5%;
+	top:263%;
+	left:100%;
+}
+
+#rating-boat-small-8
+{
+	position:absolute;
+	width:6.5%;
+	top:266%;
+	left:100%;
+}
+ 
+#rating-boat-small-9
+{
+	position:absolute;
+	width:6.5%;
+	top:272.5%;
+	left:100%;
+}
+
+#rating-boat-small-10
+{
+	position:absolute;
+	width:6.5%;
+	top:278%;
+	left:100%;
+}
+
+#rating-boat-small-11
+{
+	position:absolute;
+	width:6.5%;
+	top:285%;
+	left:100%;
+}
+ 
+ 
+ #boat-trigger-3
+ {
+	position:absolute;
+	top:289%; 
+ }
+
+ .boat-text{
+	width:100%;
+	height:50%;
+	position:absolute;
+	top:-20%;
+	-webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.boat-text p{
+	position:absolute;
+	font-size:1.9vw;
+	line-height: 100%;
+	text-align:center;
+	width:305%;
+	color:white;
+	text-shadow:
+	-1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+   
+	-webkit-transform: translateX(-33%); /* Safari */
+    transform: translateX(-33%);
+}
+
+/* ==========================================================================
+ Helper classes
+ ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+	display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+ EXAMPLE Media Queries for Responsive Design.
+ These examples override the primary ('mobile first') styles.
+ Modify as content requires.
+ ========================================================================== */
+
+/* ==========================================================================
+ Print styles.
+ Inlined to avoid the additional HTTP request:
+ http://www.phpied.com/delay-loading-your-print-css/
+ ========================================================================== */
+
+@media print {
+	*, *:before, *:after, *:first-letter, *:first-line {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster:
+		 http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a, a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links that are fragment identifiers,
+	 * or use the `javascript:` pseudo protocol
+	 */
+
+	a[href^="#"]:after, a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+	 * Printing Tables:
+	 * http://css-discuss.incutio.com/wiki/Printing_Tables
+	 */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr, img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}

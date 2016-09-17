@@ -1,0 +1,4 @@
+.menu-btn{text-decoration:none;text-align:center;color:#FAE2F7;cursor:pointer;background:#33849B;border-right:0.5vw solid #296A7C;transition-property:border-right .6s linear 0s;-moz-transition:border-right .6s linear 0s;-webkit-transition:border-right .6s linear 0s;-o-transition:border-right .6s linear 0s;font-size:1.5vw;}
+.menu-btn i{display:inline-block;position:relative;top:50%;transform:translateY(-50%);}
+.menu-btn.active{border-right:0.5vw solid #2DFF46;color:#2DFF46;}
+

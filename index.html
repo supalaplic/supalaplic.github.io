@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/buttons.css">
+		<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+		<script src="js/lib/greensock/TweenMax.min.js"></script>
+		<script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+		<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
+	</head>
+	<body>
+		<!--[if lt IE 8]>nn
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+		</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+
+
+
+
+		<div id="menu-trigger"></div>
+		<section id="canvas">
+			<div id="terrain">
+				<div class="ground" id="ocean-1"><img src="img/ocean-1.png"></div>
+				<div class="ground" id="ground-1"><img src="img/ground-1.png"></div>
+
+				<div id="platform-trigger-1a"></div>
+				<div class="ground" id="platform-1"><img src="img/platform-1.png"></div>
+				<div id="platform-trigger-1b"></div>
+
+			    <div class="ground" id="ground-2"><img src="img/ground-2.png"></div>
+
+				<div id="platform-trigger-2a"></div>
+				<div class="ground" id="platform-2"><img src="img/platform-2.png"></div>
+				<div class="ground" id="platform-2-b"><img src="img/platform-2-b.png"></div>
+				<div id="platform-trigger-2b"></div>
+
+				<div class="ground" id="ground-3"><img src="img/ground-3.png"></div>
+
+				<div id="platform-trigger-3a"></div>
+				<div class="ground" id="platform-3">
+					<img src="img/platform-3.png">
+					<a href="portfolio.html" class="sendButton" id="sendButton-1">Portfolio</a>
+					<a href="CV_Tudor_Fratean.pdf" class="sendButton" id="sendButton-2">CV</a>
+					<a href="others.html" class="sendButton" id="sendButton-3">Others</a>
+				</div>
+				<div id="platform-trigger-3b"></div>
+
+				<div class="ground" id="ground-4"><img src="img/ground-4.png"></div>
+
+				<div id="platform-trigger-4a"></div>
+				<div class="ground" id="platform-4"><img src="img/platform-4.png"></div>
+				<div id="platform-trigger-4b"></div>
+
+				<div class="ground" id="ground-5"><img src="img/ground-5.png"></div>
+
+				<div id="platform-trigger-5a"></div>
+				<div class="ground" id="platform-5"><img src="img/platform-5.png"></div>
+				<div id="platform-trigger-5b"></div>
+
+				<div class="ground" id="ground-6"><img src="img/ground-6.png"></div>
+				<div class="ground" id="ground-7"><img src="img/ground-7.png"></div>
+
+
+			</div>
+
+			<div id="towers">
+
+				<div id="tower-trigger-1"></div>
+				<div class="tower" id="rating-tower-1">
+					<img class ="rating-tower-img" id="rating-tower-1-img" src="img/rating-tower-1.png">
+					<div class = "tower-text" id ="tower-text-1"><p>Scripting<br>5/5</p></div>
+				</div>
+
+				<div class="tower" id="rating-tower-2">
+					<img class ="rating-tower-img" id="rating-tower-2-img" src="img/rating-tower-1.png">
+					<div class = "tower-text" id ="tower-text-2"><p>Animator<br>5/5</p></div>
+				</div>
+
+				<div class="tower" id="rating-tower-3">
+					<img class ="rating-tower-img" id="rating-tower-3-img" src="img/rating-tower-1.png">
+					<div class = "tower-text" id ="tower-text-3"><p>Particle System<br>4/5</p></div>
+				</div>
+
+				<div class="tower" id="rating-tower-4">
+					<img class ="rating-tower-img" id="rating-tower-4-img" src="img/rating-tower-1.png">
+					<div class = "tower-text" id ="tower-text-4"><p>UI<br>5/5</p></div>
+				</div>
+
+				<div class="tower" id="rating-tower-5">
+					<img class ="rating-tower-img" id="rating-tower-5-img" src="img/rating-tower-1.png">
+					<div class = "tower-text" id ="tower-text-5"><p>Editor Scripting<br>3/5</p></div>
+				</div>
+
+				<div class="tower" id="rating-tower-6">
+					<img class ="rating-tower-img" id="rating-tower-6-img" src="img/rating-tower-1.png">
+					<div class = "tower-text" id ="tower-text-6"><p>Shader<br>2/5</p></div>
+				</div>
+
+
+				<div id="boat-trigger-1"></div>
+
+				<div class="boat" id="rating-boat-small-1">
+					<div class = "boat-text" id ="boat-text-1"><p>C# / .NET</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-2">
+					<div class = "boat-text" id ="boat-text-2"><p>ActionScript 3.0</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-3">
+					<div class = "boat-text" id ="boat-text-3"><p>Game Dev</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+
+				<div id="boat-trigger-2"></div>
+
+				<div class="boat" id="rating-boat-small-4">
+					<div class = "boat-text" id ="boat-text-4"><p>JavaScript</p></div>
+					<img src="img/boat-small-2.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-5">
+					<div class = "boat-text" id ="boat-text-5"><p>p5.js</p></div>
+					<img src="img/boat-small-2.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-6">
+					<div class = "boat-text" id ="boat-text-6"><p>CSS / HTML</p></div>
+					<img src="img/boat-small-2.png">
+				</div>
+
+				<div id="boat-trigger-3"></div>
+
+				<div class="boat" id="rating-boat-small-7">
+					<div class = "boat-text" id ="boat-text-7"><p>Java</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-8">
+					<div class = "boat-text" id ="boat-text-8"><p>SQL</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-9">
+					<div class = "boat-text" id ="boat-text-9"><p>Android</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-10">
+					<div class = "boat-text" id ="boat-text-10"><p>Bluetooth</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+				<div class="boat" id="rating-boat-small-11">
+					<div class = "boat-text" id ="boat-text-11"><p>Networking</p></div>
+					<img src="img/boat-small-1.png">
+				</div>
+
+			</div>
+
+
+
+
+
+			<!--<div id="menu-1">
+				<div id="menu-button-group">
+					<li><div class="menu-btn"><i class="icon ion-information-circled"></i></div></li>
+					<li><div class="menu-btn"><i class="icon ion-clipboard"></i></div></li>
+					<li><div class="menu-btn"><i class="icon ion-ios-game-controller-a"></i></div></li>
+					<li><div class="menu-btn"><i class="icon ion-social-javascript"></i></div></li>
+				</div>
+			</div>-->
+		</section>
+
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+			window.ga = function() {
+				ga.q.push(arguments)
+			};
+			ga.q = [];
+			ga.l = +new Date;
+			ga('create', 'UA-XXXXX-Y', 'auto');
+			ga('send', 'pageview')
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	</body>
+</html>
