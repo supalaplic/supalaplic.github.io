@@ -1,0 +1,35 @@
+body{
+  background-color: #282C34
+}
+
+#defaultCanvas0{
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+#title *{
+  text-align: center;
+  color: white;
+}
+
+#title h1{
+  font-size: 40px;
+}
+
+#title p{
+  font-size: 30px;
+}
+
+#description{
+  top:25px;
+  position: relative;
+}
+
+#description li{
+  text-align: center;
+  list-style-type:none;
+  color: white;
+  font-size: 20px;
+
+}
