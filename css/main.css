@@ -122,7 +122,7 @@ p {
 	width: 100%;
 	background-image: url(../img/clouds.png);
     background-repeat: repeat;
-   
+
 }
 
 #parallax1{
@@ -230,7 +230,7 @@ p {
 
 .line-1 {
 	stroke-dasharray: 280;
-	stroke-dashoffset: -280;	
+	stroke-dashoffset: -280;
 }
 
 .scale-line-1 {
@@ -239,7 +239,7 @@ p {
 	height: auto;
 	position: relative;
 	padding-top: 40%;
-} 
+}
 
 svg {
 	width: 100%;
@@ -261,7 +261,7 @@ svg {
 	  position: absolute;
 	  top: 100%;
 	  left: 50%;
-	  
+
 	  transform: translateY(-110%) translateX(-50%);
 }
 /* ==========================================================================
@@ -307,7 +307,7 @@ svg {
 }
 
 #menu-button-group >.menu-btn:first-child,
-#menu-button-group li:first-child .menu-btn {   
+#menu-button-group li:first-child .menu-btn {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
@@ -342,7 +342,7 @@ svg {
 
 .ground *{
 	width:100%;
-	
+
 }
 
 #ocean-1{
@@ -367,6 +367,7 @@ svg {
 #ground-4{
 	position:absolute;
 	top:147.5%;
+	pointer-events:none;
 }
 
 #ground-5{
@@ -390,7 +391,7 @@ svg {
 	position:absolute;
 	left:32%;
 	width:30%;
-	
+
 	background-color:#7BA5D7;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
@@ -548,79 +549,79 @@ svg {
     padding-bottom: 100%;
  }
 
- 
+
 .tower{
 	width:5.2%;
 	z-index:-1;
-	
+
 }
 
 .tower *{
 	width:100%;
 	z-index:-1;
-	
+
 }
- 
+
  #rating-tower-1
  {
 	position:absolute;
 	top:185.98%;
 	left:15.4%;
  }
- 
+
   #rating-tower-2
  {
 	position:absolute;
 	top:177%;
 	left:27.8%;
  }
- 
+
   #rating-tower-3
  {
 	position:absolute;
 	top:193.8%;
 	left:25.2%;
- } 
- 
+ }
+
  #rating-tower-4
  {
 	position:absolute;
 	top:183%;
 	left:40.4%;
  }
- 
+
   #rating-tower-5
  {
 	position:absolute;
 	top:195%;
 	left:47%;
  }
- 
+
   #rating-tower-6
  {
 	position:absolute;
 	top:189%;
 	left:59.7%;
  }
- 
+
  .rating-tower-img
  {
 	-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 88%, 48% 100%, 0 88%);
 	clip-path: polygon(0 100%, 100% 100%, 100% 88%, 48% 100%, 0 88%);
  }
- 
+
  #tower-trigger-1
  {
 	position:absolute;
-	top:155%; 
+	top:155%;
  }
- 
+
 .tower-text{
 	width:100%;
 	height:50%;
 	position:absolute;
 	top:-20%;
-	
+
 	-webkit-transform: scale(0);
     transform: scale(0);
 }
@@ -633,11 +634,11 @@ svg {
 	width:305%;
 	color:white;
   text-shadow:
-   -1px -1px 0 #000,  
+   -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
-   
+
 	-webkit-transform: translateX(-33%); /* Safari */
     transform: translateX(-33%);
 }
@@ -650,7 +651,7 @@ svg {
 .boat *{
 	width:100%;
 }
- 
+
 #rating-boat-1
 {
 	position:absolute;
@@ -687,9 +688,9 @@ svg {
  #boat-trigger-1
  {
 	position:absolute;
-	top:224%; 
+	top:224%;
  }
- 
+
 #rating-boat-small-4
 {
 	position:absolute;
@@ -717,9 +718,9 @@ svg {
  #boat-trigger-2
  {
 	position:absolute;
-	top:265%; 
+	top:265%;
  }
- 
+
  #rating-boat-small-7
 {
 	position:absolute;
@@ -735,7 +736,7 @@ svg {
 	top:266%;
 	left:100%;
 }
- 
+
 #rating-boat-small-9
 {
 	position:absolute;
@@ -759,12 +760,12 @@ svg {
 	top:285%;
 	left:100%;
 }
- 
- 
+
+
  #boat-trigger-3
  {
 	position:absolute;
-	top:289%; 
+	top:289%;
  }
 
  .boat-text{
@@ -784,11 +785,11 @@ svg {
 	width:305%;
 	color:white;
 	text-shadow:
-	-1px -1px 0 #000,  
+	-1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-   
+
 	-webkit-transform: translateX(-33%); /* Safari */
     transform: translateX(-33%);
 }
