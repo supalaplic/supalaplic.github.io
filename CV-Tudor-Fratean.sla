@@ -100,7 +100,7 @@
             <ITEXT FONT="Times New Roman Bold" FONTSIZE="15" CH="Skill List"/>
             <para ALIGN="0"/>
             <para ALIGN="0" LINESP="4"/>
-            <ITEXT CH="Proficient in C++, C# / .NET with Unity, ActionScript 3.0, and Game Development on both mobile and desktop."/>
+            <ITEXT CH="Proficient in C++, C# / .NET with Unity, ActionScript 3.0, and Game Development on both PC and mobile."/>
             <para ALIGN="0"/>
             <ITEXT CH="Experienced in JavaScript, p5.js and CSS / HTML."/>
             <para/>
@@ -119,7 +119,7 @@
             <para/>
             <ITEXT FONT="Times New Roman Bold" FONTSIZE="15" CH="Employment History"/>
             <para ALIGN="0"/>
-            <ITEXT CH="Gameloft,  Cluj-Napoca, year of 2017, Worked on engine development, gameplay programming and AI. I was the only programmer in a prototype phase (done in Unity), then switched to an in-house c++ engine where I helped with both engine implementations and general programming."/>
+            <ITEXT CH="Gameloft,  Cluj-Napoca, 2017 - Present, Worked on engine development, gameplay programming and AI. I was the only programmer in a prototype phase then switched to an in-house C++ engine where I helped with bothgeneral programming and engine implementations."/>
             <para ALIGN="0"/>
             <para ALIGN="0"/>
             <para ALIGN="0" LINESP="4"/>
